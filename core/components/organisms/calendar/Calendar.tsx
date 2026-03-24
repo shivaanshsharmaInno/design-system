@@ -586,16 +586,18 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
 
     return (
       <Tooltip tooltip={ariaLabel} position="bottom">
-        <Button
-          type="button"
-          className={headerIconClass}
-          appearance="basic"
-          icon={`arrow_${type === 'next' ? 'forward' : 'back'}`}
-          disabled={disabled}
-          size={size === 'small' ? 'tiny' : 'regular'}
-          onClick={this.onNavIconClickHandler(type)}
-          aria-label={ariaLabel}
-        />
+        <span>
+          <Button
+            type="button"
+            className={headerIconClass}
+            appearance="basic"
+            icon={`arrow_${type === 'next' ? 'forward' : 'back'}`}
+            disabled={disabled}
+            size={size === 'small' ? 'tiny' : 'regular'}
+            onClick={this.onNavIconClickHandler(type)}
+            aria-label={ariaLabel}
+          />
+        </span>
       </Tooltip>
     );
   };

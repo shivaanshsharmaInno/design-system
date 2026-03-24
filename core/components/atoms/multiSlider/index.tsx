@@ -365,7 +365,7 @@ export class MultiSlider extends React.Component<InternalMultiSliderProps, Multi
           onBlur={this.handleLabelMouseLeave}
           data-test="DesignSystem-MultiSlider-Label"
           role="button"
-          // tabIndex={disabled ? -1 : 0}
+          tabIndex={disabled ? -1 : 0}
           aria-disabled={disabled || undefined}
         >
           {/* eslint-enable  */}
@@ -465,7 +465,7 @@ export class MultiSlider extends React.Component<InternalMultiSliderProps, Multi
             }}
             data-test="DesignSystem-MultiSlider-Slider-Track"
             role="button"
-            // tabIndex={this.props.disabled ? -1 : 0}
+            tabIndex={this.props.disabled ? -1 : 0}
             aria-disabled={this.props.disabled || undefined}
           >
             {/* eslint-enable */}
